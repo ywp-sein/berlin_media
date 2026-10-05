@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#f7f5ef" />
-    <meta name="description" content="Stories of grace, hope, and God's presence across Berlin. Discover the stepping stones in your neighborhood." />
-    <title>Berlin Media — Share the good news</title>
+    <meta name="description" content="Gute Nachrichten aus Berlin: Geschichten der Hoffnung, der Begegnung und des Neuanfangs in jeder Nachbarschaft." />
+    <title>Berlin Media — Gute Nachrichten teilen</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -17,31 +17,37 @@
         <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
         <span>berlin<span class="brand-light">media</span></span>
       </a>
-      <nav class="main-nav" aria-label="Main navigation">
-        <a href="#map">Explore the map</a>
-        <a href="#stories">Stories</a>
-        <a href="#about">Our heart</a>
+      <nav class="main-nav" aria-label="Hauptnavigation">
+        <a href="#map" data-i18n="nav.map">Karte erkunden</a>
+        <a href="#stories" data-i18n="nav.stories">Geschichten</a>
+        <a href="#about" data-i18n="nav.about">Unser Ziel</a>
       </nav>
-      <button class="button button-dark header-cta" data-open-form>Share your story <span aria-hidden="true">↗</span></button>
+      <div class="header-actions">
+        <div class="lang-switch" aria-label="Sprachumschalter">
+          <button class="lang-btn is-active" type="button" data-lang="de">DE</button>
+          <button class="lang-btn" type="button" data-lang="en">EN</button>
+        </div>
+        <button class="button button-dark header-cta" data-open-form data-i18n="header.cta">Erzähl deine Geschichte <span aria-hidden="true">↗</span></button>
+      </div>
       <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
     </header>
 
     <main id="top">
       <section class="hero section-wrap">
         <div class="hero-copy">
-          <div class="eyebrow"><span class="eyebrow-dot"></span> STORIES OF HOPE, ROOTED IN BERLIN</div>
-          <h1>Good news is<br />happening <em>here.</em></h1>
-          <p class="hero-intro">Every neighborhood holds a story of grace. Find the small signs of hope that remind us God is still at work in our city.</p>
+          <div class="eyebrow" data-i18n="hero.eyebrow"><span class="eyebrow-dot"></span> GESCHICHTEN DER HOFFNUNG, VERWURZELT IN BERLIN</div>
+          <h1 data-i18n="hero.title">Gute Nachrichten<br />passieren <em>hier.</em></h1>
+          <p class="hero-intro" data-i18n="hero.intro">Jede Nachbarschaft trägt eine Geschichte der Hoffnung in sich. Entdecke die kleinen Zeichen, die uns daran erinnern, dass Gutes auch in unserer Stadt entsteht.</p>
           <div class="hero-actions">
-            <a class="button button-green" href="#map">Explore the map <span aria-hidden="true">↓</span></a>
-            <a class="text-link" href="#about">Why stepping stones? <span aria-hidden="true">↗</span></a>
+            <a class="button button-green" href="#map" data-i18n="hero.ctaPrimary">Karte erkunden <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="#about" data-i18n="hero.ctaSecondary">Warum Stepping Stones? <span aria-hidden="true">↗</span></a>
           </div>
-          <div class="hero-note"><span class="note-icon" aria-hidden="true">✳</span><span>Stories that make room for hope,<br />one neighborhood at a time.</span></div>
+          <div class="hero-note"><span class="note-icon" aria-hidden="true">✳</span><span data-i18n="hero.note">Geschichten, die Raum für Hoffnung schaffen,<br />nachbarschaft für Nachbarschaft.</span></div>
         </div>
-        <div class="hero-art" aria-label="Illustration of stepping stones leading through a Berlin neighborhood">
+        <div class="hero-art" aria-label="Illustration von Stepping Stones durch eine Berliner Nachbarschaft">
           <div class="art-sun"></div>
-          <div class="art-caption"><span class="caption-line"></span> A CITY STILL BECOMING</div>
-          <svg class="hero-illustration" viewBox="0 0 620 510" role="img" aria-label="A winding path of stepping stones through an abstract Berlin cityscape">
+          <div class="art-caption"><span class="caption-line"></span> EINE STADT IM WERDEN</div>
+          <svg class="hero-illustration" viewBox="0 0 620 510" role="img" aria-label="Ein gewundener Weg aus Stepping Stones durch eine abstrakte Berliner Stadtlandschaft">
             <path class="art-hill hill-back" d="M0 333C91 282 159 310 226 280c71-32 124-2 184 28 73 37 141-9 210-20v222H0Z" />
             <path class="art-hill hill-front" d="M0 385c82-53 143-35 218-1 82 36 143-29 226-6 64 18 115 3 176-33v165H0Z" />
             <g class="buildings">
@@ -65,18 +71,18 @@
             </g>
             <g class="art-sparkles"><path d="M519 134v21m-10-10h21M70 315v15m-7-7h14M334 93v17m-8-8h16" /><circle cx="499" cy="188" r="3" /><circle cx="221" cy="128" r="3" /></g>
           </svg>
-          <div class="art-stamp"><span>STORIES</span><strong>grow<br />here</strong><span>BERLIN · 2026</span></div>
+          <div class="art-stamp"><span>GESCHICHTEN</span><strong>wachsen<br />hier</strong><span>BERLIN · 2026</span></div>
         </div>
       </section>
 
       <section class="map-section section-wrap" id="map">
         <div class="section-heading">
-          <div><div class="eyebrow"><span class="eyebrow-dot"></span> FIND A STORY NEAR YOU</div><h2>Hope has an address.</h2></div>
-          <p>Every pin is a stepping stone—a moment in a bigger story of grace. Follow the trail from neighborhood to neighborhood and discover what God is doing here.</p>
+          <div><div class="eyebrow" data-i18n="map.eyebrow"><span class="eyebrow-dot"></span> FINDE EINE GESCHICHTE IN DEINER NÄHE</div><h2 data-i18n="map.heading">Hoffnung hat eine Adresse.</h2></div>
+          <p data-i18n="map.text">Jeder Pin ist ein Stepping Stone – ein Moment in einer größeren Geschichte der Hoffnung. Folge der Spur von Nachbarschaft zu Nachbarschaft und entdecke, was hier geschieht.</p>
         </div>
         <div class="map-layout">
           <div class="map-card">
-            <div class="map-toolbar"><div class="map-label"><span class="map-live-dot"></span> BERLIN STORY MAP <span class="map-divider">/</span> <span id="map-count">10 STORIES</span></div><button class="map-reset" id="reset-map" aria-label="Show all stories">↗ <span>All Berlin</span></button></div>
+            <div class="map-toolbar"><div class="map-label"><span class="map-live-dot"></span> <span data-i18n="map.label">BERLINER GESCHICHTENKARTE</span> <span class="map-divider">/</span> <span id="map-count">10 GESCHICHTEN</span></div><button class="map-reset" id="reset-map" aria-label="Alle Geschichten anzeigen"><span data-i18n="map.resetLabel">Ganz Berlin</span> ↗</button></div>
             <div class="map-canvas">
               <div class="map-water water-one"></div><div class="map-water water-two"></div>
               <svg class="district-map" viewBox="0 0 700 560" role="img" aria-label="Illustrated map of Berlin's 12 boroughs. Select a Bezirk to see its stories.">
@@ -108,46 +114,46 @@
               <div class="map-compass" aria-hidden="true"><span>N</span><i>↑</i></div>
               <div class="map-key"><span class="key-stone"></span> STEPPING STONES <span class="key-count" id="key-count">10</span></div>
             </div>
-              <div class="map-footer"><span>Illustrated neighborhood map · not to scale</span><span>Choose an area to explore <b>→</b></span></div>
+              <div class="map-footer"><span data-i18n="map.footerLeft">Illustrierte Nachbarschaftskarte · nicht maßstabsgerecht</span><span data-i18n="map.footerRight">Wähle einen Bereich <b>→</b></span></div>
           </div>
           <aside class="story-feature" aria-live="polite">
-            <div class="feature-topline"><span class="feature-label">A STORY FROM <span id="feature-ortsteil">MOABIT</span> · <span id="feature-bezirk">MITTE</span></span><span class="feature-index" id="feature-index">01 / 10</span></div>
+            <div class="feature-topline"><span class="feature-label">GESCHICHTE AUS <span id="feature-ortsteil">MOABIT</span> · <span id="feature-bezirk">MITTE</span></span><span class="feature-index" id="feature-index">01 / 10</span></div>
             <div class="feature-quote-mark" aria-hidden="true">“</div>
-            <h3 id="feature-title">Example story title</h3>
-            <p class="feature-excerpt" id="feature-excerpt">Example story text for display and testing only. Replace this placeholder before publishing.</p>
-            <div class="feature-person"><div class="avatar" id="feature-avatar">E</div><div><strong id="feature-author">Example person</strong><span id="feature-location">Example neighborhood · example read time</span></div><span class="feature-arrow" aria-hidden="true">↗</span></div>
-            <button class="feature-link" id="read-feature">Read this story <span aria-hidden="true">→</span></button>
-            <div class="feature-foot"><span><i></i> A STEPPING STONE OF HOPE</span><span id="feature-number">01</span></div>
+            <h3 id="feature-title">Beispieltitel</h3>
+            <p class="feature-excerpt" id="feature-excerpt">Beispieltext nur zur Anzeige und zum Testen. Ersetze diesen Platzhalter vor dem Veröffentlichen.</p>
+            <div class="feature-person"><div class="avatar" id="feature-avatar">B</div><div><strong id="feature-author">Beispielperson</strong><span id="feature-location">Beispielviertel · Beispiel-Lesezeit</span></div><span class="feature-arrow" aria-hidden="true">↗</span></div>
+            <button class="feature-link" id="read-feature">Diese Geschichte lesen <span aria-hidden="true">→</span></button>
+            <div class="feature-foot"><span><i></i> EIN STEPPING STONE DER HOFFNUNG</span><span id="feature-number">01</span></div>
           </aside>
         </div>
       </section>
 
       <section class="stories-section section-wrap" id="stories">
         <div class="stories-heading">
-          <div><div class="eyebrow"><span class="eyebrow-dot"></span> THE STORIES WE CARRY</div><h2>Small moments.<br /><em>Long journeys.</em></h2></div>
-          <div class="stories-tools"><label class="search-box"><span aria-hidden="true">⌕</span><input type="search" id="story-search" placeholder="Find a story..." aria-label="Find a story" /></label><select id="ortsteil-filter" aria-label="Filter stories by neighborhood"><option value="all">All neighborhoods</option></select></div>
+          <div><div class="eyebrow" data-i18n="stories.eyebrow"><span class="eyebrow-dot"></span> DIE GESCHICHTEN, DIE WIR TRAGEN</div><h2 data-i18n="stories.heading">Kleine Momente.<br /><em>Lange Wege.</em></h2></div>
+          <div class="stories-tools"><label class="search-box"><span aria-hidden="true">⌕</span><input type="search" id="story-search" placeholder="Geschichte suchen..." aria-label="Geschichte suchen" /></label><select id="ortsteil-filter" aria-label="Geschichten nach Nachbarschaft filtern"><option value="all" data-i18n="stories.filterAll">Alle Nachbarschaften</option></select></div>
         </div>
-        <p class="sample-note">Example stories for display and testing only. Replace them with approved content before publishing.</p>
+        <p class="sample-note" data-i18n="stories.sampleNote">Beispielgeschichten nur zur Anzeige und zum Testen. Ersetze sie vor der Veröffentlichung durch freigegebene Inhalte.</p>
         <div class="story-grid" id="story-grid"></div>
-        <div class="stories-bottom"><span id="stories-summary">Showing 6 of 10 stories</span><button class="text-link" id="show-more">See all stories <span aria-hidden="true">→</span></button></div>
+        <div class="stories-bottom"><span id="stories-summary" data-i18n="stories.summary">6 von 10 Geschichten werden angezeigt</span><button class="text-link" id="show-more" data-i18n="stories.showMore">Alle Geschichten ansehen <span aria-hidden="true">→</span></button></div>
       </section>
 
       <section class="about-section" id="about">
         <div class="about-inner section-wrap">
-          <div class="about-art" aria-hidden="true"><span class="about-sun"></span><div class="stone stone-large">✳</div><div class="stone stone-small"></div><div class="about-path"></div><span class="about-note">one step<br />at a time</span></div>
-          <div class="about-copy"><div class="eyebrow eyebrow-light"><span class="eyebrow-dot"></span> WHY STEPPING STONES?</div><h2>A story is never<br />just a <em>single moment.</em></h2><p>Decades ago, stumbling stones were placed throughout Germany to help us remember—to keep the stories of the past present as we move forward.</p><p>Today, we want to place stepping stones of hope throughout our city. Each one points to a journey: a trajectory of grace unfolding through people, places, encounters, and generations.</p><p>Together, these testimonies remind us: God is still speaking. God is still at work. God is still here. They help us recognize God's presence, find hope for today, and take the next step forward.</p><a class="button button-cream" href="#stories">Walk the stories <span aria-hidden="true">→</span></a></div>
+          <div class="about-art" aria-hidden="true"><span class="about-sun"></span><div class="stone stone-large">✳</div><div class="stone stone-small"></div><div class="about-path"></div><span class="about-note" data-i18n="about.note">ein Schritt<br />nach dem anderen</span></div>
+          <div class="about-copy"><div class="eyebrow eyebrow-light" data-i18n="about.eyebrow"><span class="eyebrow-dot"></span> WARUM STEPPING STONES?</div><h2 data-i18n="about.heading">Eine Geschichte ist nie<br />nur ein <em>einzelner Moment.</em></h2><p data-i18n="about.p1">Vor Jahrzehnten wurden in Deutschland Stolpersteine verlegt, um uns zu erinnern – damit Geschichten aus der Vergangenheit auch in der Gegenwart weiterleben.</p><p data-i18n="about.p2">Heute wollen wir in unserer Stadt Stepping Stones der Hoffnung setzen. Jeder einzelne zeigt den Weg einer größeren Geschichte: eine Spur aus Begegnungen, Orten, Menschen und Generationen.</p><p data-i18n="about.p3">Zusammengenommen erinnern diese Geschichten daran: Gott spricht noch. Gott ist noch am Werk. Gott ist noch hier. Sie helfen uns, seine Gegenwart zu erkennen, Hoffnung für heute zu finden und den nächsten Schritt zu gehen.</p><a class="button button-cream" href="#stories" data-i18n="about.cta">Durch die Geschichten gehen <span aria-hidden="true">→</span></a></div>
         </div>
       </section>
 
       <section class="invite-section section-wrap">
-        <div class="invite-icon" aria-hidden="true">✳</div><div><span class="eyebrow">YOUR STORY BELONGS HERE</span><h2>What has hope looked like<br />on your street?</h2></div><button class="button button-dark" data-open-form>Place a stepping stone <span aria-hidden="true">↗</span></button>
+        <div class="invite-icon" aria-hidden="true">✳</div><div><span class="eyebrow" data-i18n="invite.eyebrow">DEINE GESCHICHTE GEHÖRT HIER HER</span><h2 data-i18n="invite.heading">Wie hat Hoffnung<br />auf deiner Straße ausgesehen?</h2></div><button class="button button-dark" data-open-form data-i18n="invite.cta">Stepping Stone setzen <span aria-hidden="true">↗</span></button>
       </section>
     </main>
 
-    <footer class="site-footer"><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span>berlin<span class="brand-light">media</span></span></a><p>Share the good news. Tell a better story.</p><span>MADE WITH HOPE IN BERLIN <b>✳</b> © 2026</span></footer>
+    <footer class="site-footer"><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span>berlin<span class="brand-light">media</span></span></a><p data-i18n="footer.tagline">Teile die guten Nachrichten. Erzähle eine bessere Geschichte.</p><span data-i18n="footer.credit">ERSTELLT MIT HOFFNUNG IN BERLIN <b>✳</b> © 2026</span></footer>
 
-    <dialog class="story-dialog" id="story-dialog" aria-labelledby="dialog-title"><form method="dialog" class="dialog-dismiss"><button class="dialog-close" aria-label="Close">×</button></form><div class="dialog-content" id="dialog-content"></div></dialog>
-    <dialog class="form-dialog" id="form-dialog" aria-labelledby="form-title"><form method="dialog" class="dialog-dismiss"><button class="dialog-close" aria-label="Close">×</button></form><div class="form-content"><div class="eyebrow"><span class="eyebrow-dot"></span> ADD YOUR STEPPING STONE</div><h2 id="form-title">Hope has a story.<br /><em>Tell us yours.</em></h2><p>This form is for demo display and testing only. Replace example entries with real content before publishing.</p><form id="story-form"><label>Your name<input name="author" required maxlength="48" placeholder="e.g. Example name" /></label><label>Neighborhood<select name="ortsteil" required><option value="" disabled selected>Choose a neighborhood</option></select></label><label>Story title<input name="title" required maxlength="80" placeholder="Example story title" /></label><label>Your story<textarea name="body" required minlength="30" maxlength="900" rows="5" placeholder="Example story text for display and testing only..."></textarea></label><button class="button button-green form-submit" type="submit">Place my stepping stone <span aria-hidden="true">→</span></button><p class="form-status" id="form-status" role="status"></p></form></div></dialog>
+    <dialog class="story-dialog" id="story-dialog" aria-labelledby="dialog-title"><form method="dialog" class="dialog-dismiss"><button class="dialog-close" aria-label="Schließen">×</button></form><div class="dialog-content" id="dialog-content"></div></dialog>
+    <dialog class="form-dialog" id="form-dialog" aria-labelledby="form-title"><form method="dialog" class="dialog-dismiss"><button class="dialog-close" aria-label="Schließen">×</button></form><div class="form-content"><div class="eyebrow"><span class="eyebrow-dot"></span> DEINEN STEPPING STONE HINZUFÜGEN</div><h2 id="form-title">Hoffnung hat eine Geschichte.<br /><em>Erzähl uns deine.</em></h2><p>Dieses Formular dient nur der Demo-Anzeige und dem Testen. Ersetze Beispieltexte vor der Veröffentlichung durch echte Inhalte.</p><form id="story-form"><label>Dein Name<input name="author" required maxlength="48" placeholder="z. B. Beispielname" /></label><label>Nachbarschaft<select name="ortsteil" required><option value="" disabled selected>Wähle eine Nachbarschaft</option></select></label><label>Geschichtstitel<input name="title" required maxlength="80" placeholder="Beispieltitel" /></label><label>Deine Geschichte<textarea name="body" required minlength="30" maxlength="900" rows="5" placeholder="Beispieltext nur zur Anzeige und zum Testen..."></textarea></label><button class="button button-green form-submit" type="submit">Meinen Stepping Stone platzieren <span aria-hidden="true">→</span></button><p class="form-status" id="form-status" role="status"></p></form></div></dialog>
     <script src="stories/berlin-locations.js" defer></script>
     <script src="stories/mitte/stories.js" defer></script>
     <script src="stories/friedrichshain-kreuzberg/stories.js" defer></script>
