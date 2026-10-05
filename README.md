@@ -20,7 +20,7 @@ The published site URL for this repository is <https://ywp-sein.github.io/berlin
 
 ## Story storage
 
-Stories submitted through the form are saved in the current browser's `localStorage`. This is a front-end prototype, not a shared publishing system: submissions are not sent to a server and are not visible to other visitors. Add a backend or hosted content service before using this for public submissions. The bundled testimonies are illustrative starter examples and should be replaced with approved community stories before publishing.
+Stories submitted through the form are saved in the current browser's `localStorage`. This is a front-end prototype, not a shared publishing system: submissions are not sent to a server and are not visible to other visitors. Add a backend or hosted content service before using this for public submissions. The bundled stories are example-only placeholders for display and testing, not real community testimonies.
 
 ## Story organization
 
